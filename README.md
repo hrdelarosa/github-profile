@@ -11,6 +11,18 @@ La idea principal es mostrar información de perfiles de GitHub mediante la API 
 
 </div>
 
+<details>
+<summary>Tabla de contenidos</summary>
+
+- [GitHub Profile](#github-profile)
+- [Tecnologías utilizadas](#tecnologías-utilizadas)
+- [Características](#características)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Uso de la API de GitHub](#uso-de-la-api-de-github)
+- [Instalación](#instalación)
+
+</details>
+
 ## Tecnologías utilizadas
 
 - [![React][react-badge]][react-url] – Framework de UI
