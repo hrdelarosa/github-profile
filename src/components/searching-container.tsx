@@ -1,22 +1,31 @@
-import ModeToggle from './mode-toggle'
 import { Input } from './ui/input'
 import { Search } from 'lucide-react'
+import { useSearchUser } from '@/hooks/useSearchUser'
+import { useShortcuts } from '@/hooks/useShortcuts'
 
 export default function SearchingContainer() {
-  return (
-    <div className="w-full h-56 grid place-items-center relative bg-cover bg-center bg-[url('/hero-image-github-profile.jpg')]">
-      <div className="absolute inset-0 bg-black/30"></div>
-      <div className="absolute top-5 right-5 z-10">
-        <ModeToggle />
-      </div>
+  const { value, setSearch } = useSearchUser()
+  const { searchRef, shortcutKey } = useShortcuts()
 
-      <div className="relative w-1/3 z-10">
-        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
-        <Input
-          type="text"
-          placeholder="Buscar usuario..."
-          className="pl-10 h-11"
-        />
+  return (
+    <div className="relative w-full z-10 mb-16">
+      <Search className="absolute size-5 left-2.5 top-1/2 transform -translate-y-1/2 text-muted-foreground" />
+
+      <Input
+        id="search"
+        type="text"
+        placeholder="Buscar usuario..."
+        defaultValue={value}
+        onChange={(e) => setSearch(e.target.value)}
+        className="pl-10 h-11 text-base text-white"
+        ref={searchRef}
+      />
+
+      <div className="absolute top-1/2 transform -translate-y-1/2 right-3">
+        <p className="text-xs text-white">
+          <kbd className="py-1 px-1.5 bg-background rounded">{shortcutKey}</kbd>{' '}
+          + <kbd className="py-1 px-1.5 bg-background rounded">K</kbd>
+        </p>
       </div>
     </div>
   )
