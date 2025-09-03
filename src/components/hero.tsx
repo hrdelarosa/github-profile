@@ -13,7 +13,7 @@ export default function Hero() {
         <ModeToggle />
       </div>
 
-      <div className="relative flex flex-col gap-3 max-w-xs md:max-w-md w-full z-10 dark -mt-16">
+      <div className="relative flex flex-col gap-3 max-w-xs md:max-w-md w-full z-10 dark -mt-16 md:mt-0">
         <SearchingContainer />
 
         <div className="absolute top-14 flex flex-col gap-2.5 max-w-md w-full">
