@@ -2,7 +2,7 @@ import type {
   Theme,
   ThemeProviderProps,
   ThemeProviderState,
-} from '@/types/theme-types'
+} from '@/types/theme-type'
 import { createContext, useEffect, useState } from 'react'
 
 const initialState: ThemeProviderState = {
