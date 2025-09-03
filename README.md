@@ -1,69 +1,49 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# GitHub Profile
 
-Currently, two official plugins are available:
+<img src="https://raw.githubusercontent.com/hrdelarosa/countries-board-prueba-tecnica/master/public/og.jpeg" alt="Countries Board" width="550"/>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Countries Board** es un proyecto desarrollado como parte de una prueba técnica para aplicar y demostrar mis conocimientos en desarrollo frontend. La aplicación permite explorar información detallada de países alrededor del mundo, incluyendo datos como su capital, población, región, subregión, idiomas, monedas, y países fronterizos.
 
-## Expanding the ESLint configuration
+</div>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# GitHub Profile
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Un proyecto basado en el reto de [devchallenges.io](https://devchallenges.io/) adaptado para practicar con **React** y **TypeScript**.  
+La idea principal es mostrar información de perfiles de GitHub mediante la API pública, pero con una implementación personalizada para experimentar con tecnologías y bibliotecas que aún estoy aprendiendo.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🚀 Demo
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+👉 [Ver demo desplegada](https://tu-link-deploy.com) *(si lo tienes en Vercel, Netlify u otro, agrégalo aquí)*
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📸 Screenshots
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+*(Agrega aquí capturas de pantalla del proyecto para mostrar cómo luce.)*
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- ⚛️ [React](https://react.dev/) – Librería principal de UI  
+- 📘 [TypeScript](https://www.typescriptlang.org/) – Tipado estático  
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) *(si lo usaste para estilos)*  
+- 🧩 [shadcn/ui](https://ui.shadcn.com/) *(si lo implementaste para componentes)*  
+- ⏳ [use-debounce](https://github.com/xnimorz/use-debounce) – Control de búsquedas  
+- 🌐 [GitHub API](https://docs.github.com/en/rest) – Fuente de datos  
+
+*(Si hay más librerías específicas, agrégalas aquí.)*
+
+---
+
+## 📂 Estructura del proyecto
+
+```bash
+├── public          # Archivos estáticos
+├── src
+│   ├── components  # Componentes de UI
+│   ├── hooks       # Custom hooks (ej. manejo de usuarios, debounce, etc.)
+│   ├── services    # Llamadas a la API de GitHub
+│   ├── types       # Tipados de TypeScript
+│   └── App.tsx     # Punto de entrada principal
+└── package.json
