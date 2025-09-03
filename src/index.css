@@ -13,7 +13,7 @@
 }
 
 body {
-  @apply min-h-screen dark:bg-mirage;
+  @apply min-h-screen dark:bg-big-stone;
   font-family: 'Be Vietnam Pro', sans-serif, system-ui, -apple-system, Roboto;
 }
 
